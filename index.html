@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78677ccd75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/LogoMakr-8tjyI3.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hearde-text">
+            <p>Artist</p>
+            <h1>Hi, Im <span>John Benedick Encinas </span><br>as a student at BISCAST studying <br>BSEMC with a major Digital Animation <br>Technology</h1>
+    </div>
+ </div>
+ <!--------------- about----------> 
+ <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/jb.jpg" class="profile-image"style="width: 400px; height: auto;">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Welcome to my artistic world! As a student of digital animation technology, I combine technical expertise with a boundless imagination to create mesmerizing visuals and captivating storytelling. Join me on this creative adventure as I push the boundaries of art and technology, weaving together vibrant colors, dynamic movements, and rich narratives to create immersive and unforgettable experiences. Let's embark on this journey together and explore the incredible possibilities of animation and artwork.</p>
+  
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+  
+          <div class="tab-contents active-tag" id="skills">
+            <ul>
+              <li><span>2D and 3D Animation:</span><br>Proficiency in both 2D and 3D animation techniques, including character animation, object animation, rigging, and keyframing.</li>
+              <li><span>Storyboarding:</span><br> Creating visual storyboards to plan and sequence animations, capturing the narrative and key moments.</li>
+              <li><span>Digital Art and Design:</span><br>Proficiency in digital art and design software, such as Adobe Photoshop, Illustrator, or similar tools, for creating and manipulating artwork, textures, and backgrounds.</li>
+              <li><span>Modeling and Texturing: </span><br>Creating 3D models using software like Autodesk Maya or Blender, and applying textures and materials to bring them to life.</li>
+            </ul>
+          </div>
+  
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>*</span><br>                                                                                                               </li>
+              <li><span>*</span><br>                                                                                                               </li>
+              <li><span>*</span><br>                                                                                                               </li>
+              <li><span>*</span><br>                                                                                                               </li>
+            </ul>
+          </div>
+  
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021:</span><br>Bal-flor Elementary School.</li>
+              <li><span>2021:</span><br>Senior High at Milaor National High School.</li>
+              <li><span>Expected, 2026: </span><br>Bachelor of Science in Entertainment and Multimedia Computing, specializing in Digital Animation Technology.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+        if (tablink.innerText.toLowerCase() === tabname) {
+          tablink.classList.add("active-link");
+        }
+      }
+      for
+      (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tag");
+        if (tabcontent.id === tabname) {
+          tabcontent.classList.add("active-tag");
+        }
+      }
+    }
+  </script>
+
+    <!--------------- services---------->  
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">Services</h2>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="images/e8fd99d6b751f2962e0513680dec5112.jpg" alt="Service 1" style="width: 200px; height: 200px;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Animation Production</h3>
+                <p class="service-description">Creating high-quality 2D and 3D animations for various purposes, including short films, commercials, and promotional videos.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="images/download (5).jpg" alt="Service 2" style="width: 200px; height: 200px;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Character Design</h3>
+                <p class="service-description">Designing unique and visually appealing characters that bring stories to life and resonate with the target audience.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="images/orange-3d-animated-figure-throwing-ball-maya-1024x576.jpg" alt="Motion Graphics" style="width: 200px; height: 200px;">
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Motion Graphics and Visual Effects</h3>
+                <p class="service-description">Creating eye-catching motion graphics and visual effects to enhance videos, presentations, and digital media content.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------portfolio-------->
+<div id="portfolio">
+     <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/F1.jpg">
+          </div>
+          <div class="work">
+            <img src="images/2D-EXE.jpg">
+          </div>
+          <div class="work">
+            <img src="images/2D_EXE.jpg">
+          </div>
+          <div class="work">
+            <img src="images/F2.jpg">
+          </div>
+          <div class="work">
+            <img src="images/F3.jpg">
+          </div>
+          <div class="work">
+            <img src="images/ENCINAS_MONKEY.jpg">
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (1774).png">
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (1788).png">
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (2279).png">
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (2281).png">
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (2284).png">
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (2281).png">
+          </div>
+          <div class="work">
+            <img src="images/try2-Recovered-Recovered.jpg">
+          </div>
+          <div class="work">
+            <img src="images/Untitled25-6.jpg">
+          </div>
+           <div class="work">
+            <img src="images/IMG20211024035821.jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG20211021162650.jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG_20211219_162314 (2).jpg">
+          </div>
+          <div class="work">
+            <img src="images/final3 (4).jpg">
+          </div>
+          <div class="work">
+            <img src="images/Encinas_Vector_Art.jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG_20211212_003242.jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG_20211219_163406.jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG_20211219_163607 (1).jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG_20211219_164038 (1).jpg">
+          </div>
+          <div class="work">
+            <img src="images/IMG20211024220539.jpg">
+          </div>
+          <div class="work">
+            <img src="images/ENCINAS_IN_THE_MIND_OF_CHILD__DAT1A.jpg">
+          </div>
+      
+        </div>
+     </div>
+</div>
+<!----------contact--------->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>jbrencinas@astean.biscast.edu.ph</p>
+        <p><i class="fa-solid fa-phone-volume"></i>09566392385</p>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/johnbenedick.encinas.39"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+      </div>
+      <div class="contact-right">
+        <form id="contact-form">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Function to validate the contact form
+  function validateForm() {
+    var nameInput = document.forms["contact-form"]["Name"].value;
+    var emailInput = document.forms["contact-form"]["Email"].value;
+    var messageInput = document.forms["contact-form"]["Message"].value;
+
+    // Check if any of the input fields is empty
+    if (nameInput === "" || emailInput === "" || messageInput === "") {
+      alert("Please fill in all the required fields.");
+      return false;
+    }
+
+    // Check if the email address is valid
+    var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (!emailRegex.test(emailInput)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+
+    return true;
+  }
+
+  // Submit form function
+  function submitForm(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Validate the form before submitting
+    if (!validateForm()) {
+      return;
+    }
+
+    // Submit the form to Google Sheets script
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySjJqYgBAeGrX2Nw-qf1GYt9pCmw6-iUpMVSJ-uLJRMvTodiUzajzxtrsp3rKkUWce/exec';
+    const form = document.getElementById("contact-form");
+    const msg = document.getElementById("msg");
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function () {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  }
+
+  // Add event listener to the form
+  var form = document.getElementById("contact-form");
+  form.addEventListener("submit", submitForm);
+</script>
+</body>
+</html>
